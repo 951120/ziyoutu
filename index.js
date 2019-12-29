@@ -17,8 +17,8 @@ document.getElementsByTagName('body')[0].appendChild(jq);
  */
 
 let installList = [
-    ['10002', "www.lmmpic.com", true],
     ['10003', "www.jdlingyu.mobi", true],
+    ['10002', "www.lmmpic.com", true],
     ['10001', "www.meitulu.com", true],
     ["10000", "www.ppmsg.com", true],
     ['11000', 'www.lmmpic.com.xz.beautyleg', true],
@@ -105,8 +105,8 @@ fs.writeFileSync(path.join(__dirname, 'dist', 'site-version.json'), JSON.stringi
     code: 200,
     data: {
         siteOptionsVersion: parseInt(siteOptionsFileInfo.mtime.getTime() / 1000),
-        siteAppVersion: 1020003,
-        siteAppUrl: "https://github.com/951120/ziyoutu/releases/download/1.2.2/release-1.2.2.apk",
+        siteAppVersion: 1020002,
+        siteAppUrl: "https://github.com/951120/ziyoutu/releases",
         siteAppUpgradeDesc: "版本：1.2.3" +
         "增加 12 个新分类。"
     }
