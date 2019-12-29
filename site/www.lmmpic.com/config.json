@@ -1,0 +1,240 @@
+{
+    "groupId": 0,
+    "uniqueId": 2147483646,
+    "orderId": 1,
+    "siteName": "写真集 - 精选一",
+    "siteDesc": "柠檬皮",
+    "siteHomePage": "https://www.lmmpic.com/",
+    "ruleAuthor": "官方",
+    "createdAt": "2019年1月28日",
+    "updatedAt": "2019年2月3日",
+    "dataType": "PARSE",
+    "charset": "utf-8",
+    "tabList": [
+        {
+            "uniqueId": 1,
+            "isShow": true,
+            "name": "cosplay",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.lmmpic.com/cosplay/",
+            "useHomePage": true,
+            "charset": "utf-8",
+            "homePage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/cosplay/",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/cosplay/page/${page}",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 2,
+            "isShow": true,
+            "name": "丝袜美腿",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.lmmpic.com/siwa/",
+            "useHomePage": true,
+            "charset": "utf-8",
+            "homePage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/siwa/",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/siwa/page/${page}",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 3,
+            "isShow": true,
+            "name": "性感女神",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.lmmpic.com/goddess/",
+            "useHomePage": true,
+            "charset": "utf-8",
+            "homePage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/goddess/",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/goddess/page/${page}",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 4,
+            "isShow": true,
+            "name": "日韩模特",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.lmmpic.com/kormodel/",
+            "useHomePage": true,
+            "charset": "utf-8",
+            "homePage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/kormodel/",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/kormodel/page/${page}",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 5,
+            "isShow": true,
+            "name": "模特美女",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.lmmpic.com/model/",
+            "useHomePage": true,
+            "charset": "utf-8",
+            "homePage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/model/",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/model/page/${page}",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        }
+    ],
+    "siteResource": {
+        "append": [],
+        "substitute": [],
+        "blacklist": []
+    }
+}

@@ -1,0 +1,372 @@
+{
+    "groupId": 0,
+    "uniqueId": 2147483646,
+    "orderId": 1,
+    "siteName": "写真集 - 精选四",
+    "siteDesc": "咪咪图秀",
+    "siteHomePage": "http://www.2008mm.com/",
+    "ruleAuthor": "官方",
+    "createdAt": "2019年1月28日",
+    "updatedAt": "2019年2月3日",
+    "dataType": "PARSE",
+    "charset": "GBK",
+    "tabList": [
+        {
+            "uniqueId": 1,
+            "isShow": true,
+            "name": "Beautyleg",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "http://www.2008mm.com/Beautyleg/",
+            "useHomePage": true,
+            "charset": "GBK",
+            "homePage": {
+                "request": {
+                    "url": "http://www.2008mm.com/Beautyleg",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/Beautyleg/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "http://www.2008mm.com/Beautyleg/${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/Beautyleg/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 2,
+            "isShow": true,
+            "name": "RQ-STAR",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "http://www.2008mm.com/RQ-STAR/",
+            "useHomePage": true,
+            "charset": "GBK",
+            "homePage": {
+                "request": {
+                    "url": "http://www.2008mm.com/RQ-STAR",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/RQ-STAR/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "http://www.2008mm.com/RQ-STAR/${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/RQ-STAR/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 3,
+            "isShow": true,
+            "name": "TGOD推女神",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "http://www.2008mm.com/TGOD/",
+            "useHomePage": true,
+            "charset": "GBK",
+            "homePage": {
+                "request": {
+                    "url": "http://www.2008mm.com/TGOD",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/TGOD/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "http://www.2008mm.com/TGOD/${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/TGOD/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 4,
+            "isShow": true,
+            "name": "丽柜",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "http://www.2008mm.com/ligui/",
+            "useHomePage": true,
+            "charset": "GBK",
+            "homePage": {
+                "request": {
+                    "url": "http://www.2008mm.com/ligui",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/ligui/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "http://www.2008mm.com/ligui/${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/ligui/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 5,
+            "isShow": true,
+            "name": "4K-Star",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "http://www.2008mm.com/4K-Star/",
+            "useHomePage": true,
+            "charset": "GBK",
+            "homePage": {
+                "request": {
+                    "url": "http://www.2008mm.com/4K-Star",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/4K-Star/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "http://www.2008mm.com/4K-Star/${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/4K-Star/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 6,
+            "isShow": true,
+            "name": "DISI第四印象",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "http://www.2008mm.com/DISI/",
+            "useHomePage": true,
+            "charset": "GBK",
+            "homePage": {
+                "request": {
+                    "url": "http://www.2008mm.com/DISI",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/DISI/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "http://www.2008mm.com/DISI/${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/DISI/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 7,
+            "isShow": true,
+            "name": "NAKED-ART",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "http://www.2008mm.com/NAKED-ART/",
+            "useHomePage": true,
+            "charset": "GBK",
+            "homePage": {
+                "request": {
+                    "url": "http://www.2008mm.com/NAKED-ART",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/NAKED-ART/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "http://www.2008mm.com/NAKED-ART/${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/NAKED-ART/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 8,
+            "isShow": true,
+            "name": "3Agirl写真",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "http://www.2008mm.com/3Agirl/",
+            "useHomePage": true,
+            "charset": "GBK",
+            "homePage": {
+                "request": {
+                    "url": "http://www.2008mm.com/3Agirl",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/3Agirl/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "http://www.2008mm.com/3Agirl/${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li><a target=\"_blank\".*?<img.*?</a>\\s*</li>)",
+                    "nodeUrlPrefix": "http://www.2008mm.com/3Agirl/${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        }
+    ],
+    "siteResource": {
+        "append": [],
+        "substitute": [],
+        "blacklist": []
+    }
+}

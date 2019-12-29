@@ -1,0 +1,64 @@
+{
+    "groupId": 0,
+    "uniqueId": 2147483646,
+    "orderId": 1,
+    "siteName": "分类 - 情趣装",
+    "siteDesc": "柠檬皮",
+    "siteHomePage": "https://www.lmmpic.com/",
+    "ruleAuthor": "官方",
+    "createdAt": "2019年1月28日",
+    "updatedAt": "2019年2月3日",
+    "dataType": "PARSE",
+    "charset": "utf-8",
+    "tabList": [
+        {
+            "uniqueId": 1,
+            "isShow": true,
+            "name": "cosplay",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.lmmpic.com/tag/%E6%83%85%E8%B6%A3%E8%A3%85/",
+            "useHomePage": true,
+            "charset": "utf-8",
+            "homePage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/tag/%E6%83%85%E8%B6%A3%E8%A3%85/",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/tag/%E6%83%85%E8%B6%A3%E8%A3%85/page/${page}",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        }
+    ],
+    "siteResource": {
+        "append": [],
+        "substitute": [],
+        "blacklist": []
+    }
+}

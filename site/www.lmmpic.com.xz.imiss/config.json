@@ -1,0 +1,64 @@
+{
+    "groupId": 0,
+    "uniqueId": 2147483646,
+    "orderId": 1,
+    "siteName": "写真 - IMiss爱蜜社",
+    "siteDesc": "柠檬皮",
+    "siteHomePage": "https://www.lmmpic.com/",
+    "ruleAuthor": "官方",
+    "createdAt": "2019年1月28日",
+    "updatedAt": "2019年2月3日",
+    "dataType": "PARSE",
+    "charset": "utf-8",
+    "tabList": [
+        {
+            "uniqueId": 1,
+            "isShow": true,
+            "name": "cosplay",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.lmmpic.com/tag/imiss/",
+            "useHomePage": true,
+            "charset": "utf-8",
+            "homePage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/tag/imiss/",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.lmmpic.com/tag/imiss/page/${page}",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        }
+    ],
+    "siteResource": {
+        "append": [],
+        "substitute": [],
+        "blacklist": []
+    }
+}

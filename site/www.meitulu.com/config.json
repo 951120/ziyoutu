@@ -1,0 +1,152 @@
+{
+    "groupId": 0,
+    "uniqueId": 2147483646,
+    "orderId": 1,
+    "siteName": "写真集 - 精选三",
+    "siteDesc": "美图录",
+    "siteHomePage": "http://www.2008mm.com/",
+    "ruleAuthor": "官方",
+    "createdAt": "2019年1月28日",
+    "updatedAt": "2019年2月3日",
+    "dataType": "PARSE",
+    "charset": "utf-8",
+    "tabList": [
+        {
+            "uniqueId": 1,
+            "isShow": true,
+            "name": "国产美女",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.meitulu.com/guochan/",
+            "useHomePage": true,
+            "charset": "utf-8",
+            "homePage": {
+                "request": {
+                    "url": "https://www.meitulu.com/guochan/",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li>\\s*<a href=\".*?\" target=\"_blank\"><img.*?数量.*?</li>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.meitulu.com/guochan/${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li>\\s*<a href=\".*?\" target=\"_blank\"><img.*?数量.*?</li>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 2,
+            "isShow": true,
+            "name": "日韩美女",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.meitulu.com/rihan/",
+            "useHomePage": true,
+            "charset": "utf-8",
+            "homePage": {
+                "request": {
+                    "url": "https://www.meitulu.com/rihan/",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li>\\s*<a href=\".*?\" target=\"_blank\"><img.*?数量.*?</li>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.meitulu.com/rihan/${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li>\\s*<a href=\".*?\" target=\"_blank\"><img.*?数量.*?</li>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 3,
+            "isShow": true,
+            "name": "港台美女",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.meitulu.com/gangtai/",
+            "useHomePage": true,
+            "charset": "utf-8",
+            "homePage": {
+                "request": {
+                    "url": "https://www.meitulu.com/gangtai/",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li>\\s*<a href=\".*?\" target=\"_blank\"><img.*?数量.*?</li>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.meitulu.com/gangtai/${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(<li>\\s*<a href=\".*?\" target=\"_blank\"><img.*?数量.*?</li>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        }
+    ],
+    "siteResource": {
+        "append": [],
+        "substitute": [],
+        "blacklist": []
+    }
+}

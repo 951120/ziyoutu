@@ -1,0 +1,230 @@
+{
+    "groupId": 0,
+    "uniqueId": 2147483646,
+    "orderId": 1,
+    "siteName": "写真集 - 精选二",
+    "siteDesc": "柠檬皮",
+    "siteHomePage": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+    "ruleAuthor": "官方",
+    "createdAt": "2019年1月28日",
+    "updatedAt": "2019年2月3日",
+    "dataType": "PARSE",
+    "charset": "utf-8",
+    "tabList": [
+        {
+            "uniqueId": 1,
+            "isShow": true,
+            "name": "特点",
+            "defaultPage": 1,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+            "useHomePage": false,
+            "charset": "utf-8",
+            "homePage": {
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+                    "method": "POST",
+                    "post": "type=collection1493&paged=${page}"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "msg",
+                    "dataType": "JSON_AND_REGEX",
+                    "nodeContainer": "(class=\"pos-r.*?class=\"post-meta)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "rel=\"bookmark\">(.*?)</a>",
+                    "nodeAuthor": "",
+                    "nodeImage": "background-image:url\\('(.*?)'\\)"
+                }
+            }
+        },
+        {
+            "uniqueId": 2,
+            "isShow": true,
+            "name": "绅士好物",
+            "defaultPage": 1,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+            "useHomePage": false,
+            "charset": "utf-8",
+            "homePage": {
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+                    "method": "POST",
+                    "post": "type=collection1572&paged=${page}"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "msg",
+                    "dataType": "JSON_AND_REGEX",
+                    "nodeContainer": "(class=\"pos-r.*?class=\"post-meta)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "rel=\"bookmark\">(.*?)</a>",
+                    "nodeAuthor": "",
+                    "nodeImage": "background-image:url\\('(.*?)'\\)"
+                }
+            }
+        },
+        {
+            "uniqueId": 3,
+            "isShow": true,
+            "name": "Cosplay",
+            "defaultPage": 1,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+            "useHomePage": false,
+            "charset": "utf-8",
+            "homePage": {
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+                    "method": "POST",
+                    "post": "type=collection1494&paged=${page}"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "msg",
+                    "dataType": "JSON_AND_REGEX",
+                    "nodeContainer": "(class=\"pos-r.*?class=\"post-meta)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "rel=\"bookmark\">(.*?)</a>",
+                    "nodeAuthor": "",
+                    "nodeImage": "background-image:url\\('(.*?)'\\)"
+                }
+            }
+        },
+        {
+            "uniqueId": 4,
+            "isShow": true,
+            "name": "妹子图",
+            "defaultPage": 1,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+            "useHomePage": false,
+            "charset": "utf-8",
+            "homePage": {
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+                    "method": "POST",
+                    "post": "type=collection1495&paged=${page}"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "msg",
+                    "dataType": "JSON_AND_REGEX",
+                    "nodeContainer": "(class=\"pos-r.*?class=\"post-meta)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "rel=\"bookmark\">(.*?)</a>",
+                    "nodeAuthor": "",
+                    "nodeImage": "background-image:url\\('(.*?)'\\)"
+                }
+            }
+        },
+        {
+            "uniqueId": 5,
+            "isShow": true,
+            "name": "私房",
+            "defaultPage": 1,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+            "useHomePage": false,
+            "charset": "utf-8",
+            "homePage": {
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+                    "method": "POST",
+                    "post": "type=collection1573&paged=${page}"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "msg",
+                    "dataType": "JSON_AND_REGEX",
+                    "nodeContainer": "(class=\"pos-r.*?class=\"post-meta)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "rel=\"bookmark\">(.*?)</a>",
+                    "nodeAuthor": "",
+                    "nodeImage": "background-image:url\\('(.*?)'\\)"
+                }
+            }
+        },
+        {
+            "uniqueId": 6,
+            "isShow": true,
+            "name": "自拍",
+            "defaultPage": 1,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+            "useHomePage": false,
+            "charset": "utf-8",
+            "homePage": {
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+                    "method": "POST",
+                    "post": "type=collection1617&paged=${page}"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "msg",
+                    "dataType": "JSON_AND_REGEX",
+                    "nodeContainer": "(class=\"pos-r.*?class=\"post-meta)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "rel=\"bookmark\">(.*?)</a>",
+                    "nodeAuthor": "",
+                    "nodeImage": "background-image:url\\('(.*?)'\\)"
+                }
+            }
+        },
+        {
+            "uniqueId": 7,
+            "isShow": true,
+            "name": "二次元",
+            "defaultPage": 1,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+            "useHomePage": false,
+            "charset": "utf-8",
+            "homePage": {
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.jdlingyu.mobi/wp-admin/admin-ajax.php?action=zrz_load_more_posts",
+                    "method": "POST",
+                    "post": "type=collection1497&paged=${page}"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "msg",
+                    "dataType": "JSON_AND_REGEX",
+                    "nodeContainer": "(class=\"pos-r.*?class=\"post-meta)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "rel=\"bookmark\">(.*?)</a>",
+                    "nodeAuthor": "",
+                    "nodeImage": "background-image:url\\('(.*?)'\\)"
+                }
+            }
+        }
+    ],
+    "siteResource": {
+        "append": [],
+        "substitute": [],
+        "blacklist": []
+    }
+}
