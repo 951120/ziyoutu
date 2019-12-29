@@ -14,7 +14,51 @@
         {
             "uniqueId": 1,
             "isShow": true,
-            "name": "cosplay",
+            "name": "BoLoli波萝社",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.simei8.com/",
+            "useHomePage": true,
+            "charset": "GBK",
+            "homePage": {
+                "request": {
+                    "url": "https://www.simei8.com/ji/boluoshe.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"dl-pic\"><img.*?></a>[\\s.]*?<div[^>]+>[\\s.]*?<a[^>]+>)",
+                    "nodeUrlPrefix": "https://www.simei8.com${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.simei8.com/ji/boluoshe${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"dl-pic\"><img.*?></a>[\\s.]*?<div[^>]+>[\\s.]*?<a[^>]+>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 2,
+            "isShow": true,
+            "name": "少女映画",
             "defaultPage": 2,
             "pageLoadType": "ID_ORDER",
             "articleDomain": "https://www.simei8.com/",
@@ -40,6 +84,94 @@
             "otherPage": {
                 "request": {
                     "url": "https://www.simei8.com/ji/shaonvyinghua${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"dl-pic\"><img.*?></a>[\\s.]*?<div[^>]+>[\\s.]*?<a[^>]+>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 3,
+            "isShow": true,
+            "name": "缘之空",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.simei8.com/",
+            "useHomePage": true,
+            "charset": "GBK",
+            "homePage": {
+                "request": {
+                    "url": "https://www.simei8.com/ji/yuanzhikong.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"dl-pic\"><img.*?></a>[\\s.]*?<div[^>]+>[\\s.]*?<a[^>]+>)",
+                    "nodeUrlPrefix": "https://www.simei8.com${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.simei8.com/ji/yuanzhikong${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"dl-pic\"><img.*?></a>[\\s.]*?<div[^>]+>[\\s.]*?<a[^>]+>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
+        },
+        {
+            "uniqueId": 4,
+            "isShow": true,
+            "name": "时崎狂三",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.simei8.com/",
+            "useHomePage": true,
+            "charset": "GBK",
+            "homePage": {
+                "request": {
+                    "url": "https://www.simei8.com/ji/shiqikuangsan.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"dl-pic\"><img.*?></a>[\\s.]*?<div[^>]+>[\\s.]*?<a[^>]+>)",
+                    "nodeUrlPrefix": "https://www.simei8.com${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.simei8.com/ji/shiqikuangsan${page}.html",
                     "method": "GET"
                 },
                 "response": {
