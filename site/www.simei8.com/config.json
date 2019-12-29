@@ -186,6 +186,50 @@
                     "nodeImage": "src=['\"](.*?)['\"]"
                 }
             }
+        },
+        {
+            "uniqueId": 5,
+            "isShow": true,
+            "name": "超级索尼子",
+            "defaultPage": 2,
+            "pageLoadType": "ID_ORDER",
+            "articleDomain": "https://www.simei8.com/",
+            "useHomePage": true,
+            "charset": "GBK",
+            "homePage": {
+                "request": {
+                    "url": "https://www.simei8.com/ji/chaojisuonizi.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"dl-pic\"><img.*?></a>[\\s.]*?<div[^>]+>[\\s.]*?<a[^>]+>)",
+                    "nodeUrlPrefix": "https://www.simei8.com${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=\"(.*?)\"",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=\"(.*?)\""
+                }
+            },
+            "otherPage": {
+                "request": {
+                    "url": "https://www.simei8.com/ji/chaojisuonizi${page}.html",
+                    "method": "GET"
+                },
+                "response": {
+                    "responseType": "json",
+                    "dataAddress": "data",
+                    "dataType": "REGEX",
+                    "nodeContainer": "(class=\"dl-pic\"><img.*?></a>[\\s.]*?<div[^>]+>[\\s.]*?<a[^>]+>)",
+                    "nodeUrlPrefix": "${nodeUrl}",
+                    "nodeUrl": "href=['\"](.*?)['\"]",
+                    "nodeTitle": "alt=['\"](.*?)['\"]",
+                    "nodeAuthor": "",
+                    "nodeImage": "src=['\"](.*?)['\"]"
+                }
+            }
         }
     ],
     "siteResource": {
