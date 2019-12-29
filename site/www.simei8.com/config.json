@@ -22,14 +22,14 @@
             "charset": "utf-8",
             "homePage": {
                 "request": {
-                    "url": "https://www.lmmpic.com/cosplay/",
+                    "url": "https://www.simei8.com/ji/shaonvyinghua.html",
                     "method": "GET"
                 },
                 "response": {
                     "responseType": "json",
                     "dataAddress": "data",
                     "dataType": "REGEX",
-                    "nodeContainer": "(class=\"dl-pic\">.*?</li>)",
+                    "nodeContainer": "(class=\"dl-pic\"><img.*?></a>[\\s.]*?<div[^>]+>[\\s.]*?<a[^>]+>)",
                     "nodeUrlPrefix": "https://www.simei8.com${nodeUrl}",
                     "nodeUrl": "href=['\"](.*?)['\"]",
                     "nodeTitle": "alt=\"(.*?)\"",
@@ -39,14 +39,14 @@
             },
             "otherPage": {
                 "request": {
-                    "url": "https://www.lmmpic.com/cosplay/page/${page}",
+                    "url": "https://www.simei8.com/ji/shaonvyinghua${page}.html",
                     "method": "GET"
                 },
                 "response": {
                     "responseType": "json",
                     "dataAddress": "data",
                     "dataType": "REGEX",
-                    "nodeContainer": "(class=\"picture-img\">\\s*<a.*?</figure>)",
+                    "nodeContainer": "(class=\"dl-pic\"><img.*?></a>[\\s.]*?<div[^>]+>[\\s.]*?<a[^>]+>)",
                     "nodeUrlPrefix": "${nodeUrl}",
                     "nodeUrl": "href=['\"](.*?)['\"]",
                     "nodeTitle": "alt=['\"](.*?)['\"]",
