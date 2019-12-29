@@ -22,7 +22,7 @@ let installList = [
     ['10001', "www.meitulu.com", true],
     ["10000", "www.ppmsg.com", true],
     ["10004", "www.simei8.com", true],
-    ['11000', 'www.lmmpic.com.xz.rosi', true],
+    ['11005', 'www.lmmpic.com.xz.rosi', true],
     ['11000', 'www.lmmpic.com.xz.beautyleg', true],
     ['11001', 'www.lmmpic.com.xz.iess', true],
     ['11002', 'www.lmmpic.com.xz.imiss', true],
