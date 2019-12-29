@@ -105,7 +105,7 @@ fs.writeFileSync(path.join(__dirname, 'dist', 'site-version.json'), JSON.stringi
     code: 200,
     data: {
         siteOptionsVersion: parseInt(siteOptionsFileInfo.mtime.getTime() / 1000),
-        siteAppVersion: 1020002,
+        siteAppVersion: 1030002,
         siteAppUrl: "https://github.com/951120/ziyoutu/releases",
         siteAppUpgradeDesc: "版本：1.2.3" +
         "增加 12 个新分类。"
