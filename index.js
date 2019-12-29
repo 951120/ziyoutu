@@ -1,6 +1,6 @@
 let fs = require('fs');
 let path = require('path');
-let domain = "https://raw.githubusercontent.com/951120/ziyoutu/master";
+let domain = "https://951120.github.io/ziyoutu/";
 
 let result = {
     "status": true,
