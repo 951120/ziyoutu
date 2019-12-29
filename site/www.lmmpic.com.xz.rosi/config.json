@@ -9,7 +9,7 @@
     "createdAt": "2019年1月28日",
     "updatedAt": "2019年2月3日",
     "dataType": "PARSE",
-    "charset": "utf-8",
+    "charset": "GBK",
     "tabList": [
         {
             "uniqueId": 5,
