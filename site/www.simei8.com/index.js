@@ -22,18 +22,25 @@ try {
 
     // 取得文章一共几个页面
     try {
-        var pageMax = parseInt($(".page-show a:last-child").prev().html().split('..'));
+        var pageResult = $(".page-show a:last-child").prev().html().split('..');
+        if (pageResult.length < 2) {
+            var pageMax = parseInt(pageResult[0]);
+        } else {
+            var pageMax = parseInt(pageResult[1]);
+        }
     } catch (e) {
-        var pageMax = 1;
+        var pageMax = 0;
     }
 
     for (var i = 2; i <= pageMax; i++) {
         var currentUrl = imageRoot + i + ".htm";
         $.get(currentUrl, {}, function (resp) {
-            $(resp).find('.pp img').each(function () {
-                var img = document.createElement('img');
-                img.src = this.src;
-                $('.content').append(img);
+            $(resp).find('img').each(function () {
+                if (/\/pic[\d]+/ig.test(this.src)) {
+                    var img = document.createElement('img');
+                    img.src = this.src;
+                    $('.content').append(img);
+                }
             });
             optimizer();
         });
