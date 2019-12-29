@@ -17,7 +17,6 @@ document.getElementsByTagName('body')[0].appendChild(jq);
  */
 
 let installList = [
-    ['10004', 'www.jder.net', true],
     ['10003', "www.jdlingyu.mobi", true],
     ['10002', "www.lmmpic.com", true],
     ['10001', "www.meitulu.com", true],
