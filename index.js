@@ -17,11 +17,11 @@ document.getElementsByTagName('body')[0].appendChild(jq);
  */
 
 let installList = [
-    ['10003', "www.jdlingyu.mobi", true],
-    ['10002', "www.lmmpic.com", true],
-    ['10001', "www.meitulu.com", true],
-    ["10000", "www.ppmsg.com", true],
-    ["10004", "www.simei8.com", true],
+    // ['10003', "www.jdlingyu.mobi", true],
+    // ['10002', "www.lmmpic.com", true],
+    // ['10001', "www.meitulu.com", true],
+    // ["10000", "www.ppmsg.com", true],
+    // ["10004", "www.simei8.com", true],
     ['11007', 'www.lmmpic.com.xz.rosi', true],
     ['11000', 'www.lmmpic.com.xz.beautyleg', true],
     ['11001', 'www.lmmpic.com.xz.iess', true],
