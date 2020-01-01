@@ -18,8 +18,8 @@ document.getElementsByTagName('body')[0].appendChild(jq);
 
 let installList = [
     ['10100', "www.jdlingyu.mobi", true],
-    // ['10110', "www.lmmpic.com", true],
-    // ['10120', "www.meitulu.com", true],
+    ['10110', "www.lmmpic.com", true],
+    ['10120', "www.meitulu.com", true],
     ["10130", "www.ppmsg.com", true],
     ["10140", "www.simei8.com", true],
     ['11100', 'www.lmmpic.com.xz.rosi', true],
