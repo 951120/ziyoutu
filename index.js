@@ -17,11 +17,11 @@ document.getElementsByTagName('body')[0].appendChild(jq);
  */
 
 let installList = [
-    // ['10003', "www.jdlingyu.mobi", true],
-    // ['10002', "www.lmmpic.com", true],
-    // ['10001', "www.meitulu.com", true],
-    // ["10000", "www.ppmsg.com", true],
-    // ["10004", "www.simei8.com", true],
+    ['10003', "www.jdlingyu.mobi", true],
+    ['10002', "www.lmmpic.com", true],
+    ['10001', "www.meitulu.com", true],
+    ["10000", "www.ppmsg.com", true],
+    ["10004", "www.simei8.com", true],
     ['11007', 'www.lmmpic.com.xz.rosi', true],
     ['11000', 'www.lmmpic.com.xz.beautyleg', true],
     ['11001', 'www.lmmpic.com.xz.iess', true],
@@ -107,9 +107,9 @@ fs.writeFileSync(path.join(__dirname, 'dist', 'site-version.json'), JSON.stringi
     code: 200,
     data: {
         siteOptionsVersion: parseInt(siteOptionsFileInfo.mtime.getTime() / 1000),
-        siteAppVersion: 1030002,
+        siteAppVersion: 1020002,
         siteAppUrl: "https://github.com/951120/ziyoutu/releases",
-        siteAppUpgradeDesc: "版本：1.3.2" +
+        siteAppUpgradeDesc: "版本：1.2.2" +
         "增加 12 个新分类。"
     }
 }));
